@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>Relative</title>
+      <link rel = "stylesheet" href="{% static "css/myColor.css" %}" />
+  </head>
+  <body>
+    <h1>Welcome to RelativeURL</h1>
+    <h2>Django Level 4</h2>
+    <a href="{% url 'basicApp:other' %}"> The Other Page </a>
+    <p><a href="{% url 'admin:index' %}"> Admin Index </a></p>
+    <p><a href="{% url 'index' %}"> Index </a></p>
+  </body>
+</html>
